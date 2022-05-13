@@ -21,6 +21,7 @@ Project setup according to the [**resharper-rider-plugin**](https://github.com/j
   <idea-version since-build="221" until-build="221.*" />
   ```
 - Added some C# code.
+- Ran the **Rider - Frontend (Windows)** run configuration
 - Complied and ran the plugin in Rider, with the **Rider (Windows)** Run Configurations.
 
 ## Classes

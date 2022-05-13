@@ -23,7 +23,7 @@ public class StringEditorWindow : Window
         this.WindowStartupLocation = WindowStartupLocation.CenterOwner;
         DockPanel dockPanel = new DockPanel();
         dockPanel.LastChildFill = true;
-        this.Content = (object) dockPanel;
+        this.Content = dockPanel;
         
         TextBox textBox = new TextBox();
         textBox.Margin = new Thickness(6.0);
@@ -32,9 +32,12 @@ public class StringEditorWindow : Window
         textBox.TextChanged += (sender, args) =>
         {
             model.Value = textBox.Text;
-            stringEditorWindow.DialogResult = new bool?(true);
         };
+        // this.Closed += (sender, args) =>
+        // {
+        //     stringEditorWindow.DialogResult = true;
+        // };
         dockPanel.AddChild(textBox);
-        FocusManager.SetFocusedElement((DependencyObject) this, (IInputElement) textBox);
+        FocusManager.SetFocusedElement(this, textBox);
     }
 }
