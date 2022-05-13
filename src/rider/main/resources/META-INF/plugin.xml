@@ -1,0 +1,15 @@
+<idea-plugin require-restart="true">
+  <id>com.jetbrains.rider.plugins.riderdemo</id>
+  <name>RiderDemo</name>
+  <version>1.0.0</version>
+  <vendor url="https://project-url">Author</vendor>
+  <idea-version since-build="221" until-build="221.*" />
+  <depends>com.intellij.modules.rider</depends>
+
+  <description>
+<![CDATA[
+<p>Sample description</p>
+]]>
+  </description>
+
+</idea-plugin>
